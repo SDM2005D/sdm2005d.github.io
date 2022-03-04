@@ -1,0 +1,293 @@
+*{
+    font-weight: 400;
+    font-family:Cursive,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Universal code*/
+.menu{
+    display:flex;
+}
+
+.grp1{
+    display: flex;
+}
+
+.grp2{
+    display: flex;
+}
+
+#pagehead{
+    font-size: 300%;
+    text-align: center;
+}
+
+.item{
+    background-color: gray;
+    border:1px solid black;
+    padding: 0px;
+    width:29.33%;
+    height: auto;
+}
+
+#Chic{
+    background-color: rgb(204, 155, 163);
+    border: 1px solid black;
+    color:black;
+    font-weight: 600;
+    font-size: 150%;
+    text-align: center;
+    position:relative;
+    top:0;
+    right:0px;
+}
+#Be{
+    background-color: rgb(145, 0, 0);
+    border: 1px solid black;
+    color:white;
+    font-weight: 600;
+    font-size: 150%;
+    text-align: center;
+    position:relative;
+    top:0;
+    right:0px;
+}
+#Su{
+    background-color: rgb(192, 176, 153);
+    border: 1px solid black;
+    color:black;
+    font-weight: 600;
+    font-size: 150%;
+    text-align: center;
+}
+
+.desc{
+    float:initial;
+    clear:both;
+    font-size: 18px;
+}
+
+/*Media queries and responsive styling*/
+
+/*Very thin for responsive flooring*/
+@media (min-width:0px) and (max-width:250px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+
+    .grp1{
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+
+    .item{
+        margin:1%;
+        padding: 0px;
+        width:98%;
+        height: auto;
+    }
+    
+    #Chic{
+        margin:0.5%;
+        width:99%;
+        height:16.67%;
+        font-size: 100%;
+    }
+    #Be{
+        margin:0.5%;
+        width:99%;
+        height:16.67%;
+        font-size: 100%;
+    }
+    #Su{
+        margin:0.5%;
+        width:99%;
+        height:16.67%;
+        font-size: 100%;
+    }
+    
+    .desc{
+        padding:2%;
+        margin:0.5%;
+        width:99%;
+        height:83.33%;
+        font-size: 10px;
+    }
+}
+
+/*Potrait mode of phones*/
+@media (min-width:250px) and (max-width:576px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grp1{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item{
+        margin:2.5%;
+        padding: 0px;
+        width:95%;
+        height: 100%;
+    }
+    
+    #Chic{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Be{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Su{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    
+    .desc{
+        padding:2%;
+        margin:2%;
+        width:96%;
+        height:83%;
+        
+    }
+}
+
+/*landscape mode of phones*/
+@media (min-width:576px) and (max-width:767px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item{
+        margin:2.5%;
+        padding: 0px;
+        width:95%;
+        height: 100%;
+    }
+    
+    #Chic{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Be{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Su{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    
+    .desc{
+        padding:2%;
+        margin:2%;
+        width:96%;
+        height:83%;
+    }
+}
+
+/*Tablets and iPads*/
+@media (min-width: 767px) and (max-width:992px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item{
+        margin:2.5%;
+        padding: 0px;
+        width:95%;
+        height: 100%;
+    }
+    
+    #Chic{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Be{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Su{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    
+    .desc{
+        padding:2%;
+        margin:2%;
+        width:96%;
+        height:83%;
+    }
+}
+
+/*Desktops*/
+@media (min-width: 992px){  
+    .menu{
+        justify-content: center;
+    } 
+    .grp1{
+        width:65.66%;
+        height:98%;
+        margin-left:1%;
+    }
+
+    .grp2{
+        width:31.33%;
+        height:98%;
+        margin-right:2%;
+    }
+
+    .grp1>.item{
+        margin:1% 1.5% 0 1.5%;
+        width:48.5%;
+        height: 98%;
+    }
+    
+    .grp2>.item{
+        margin:2.5% 1.5% 0 1.5%;
+        width:97%;
+        height: 97.5%;
+    }
+
+    #Chic{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Be{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    #Su{
+        margin-left:59.8%;
+        width:40%;
+        height: 12%;
+    }
+    
+    .desc{
+        margin:2%;
+        width:96%;
+        height:83%;
+    }
+}
